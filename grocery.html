@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GROCERY SHOPPING LIST</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="grocery();">
+    <h2>GROCERY SHOPPING LIST</h2>
+    <table style="width:100%">
+        <div id="demo">
+        </div>
+
+        <script>
+            function grocery() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readystate == 4 && this.status == 200) {
+                        let data = JSON.parse(this.responseText).items;
+                        var tbodyHtml = `<table>
+                    <th>serial number</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Unit</th>
+            <th>Department</th>
+            <th>Notes</th>
+            <tbody>`
+                        console.log(tbodyHtml);
+                        for (var i = 0; i < data.length; i++) {
+                            tbodyHtml += `<tr>
+        	<td>${data[i].SerialNumber}</td>
+        	<td>${data[i].Name}</td>
+            <td>${data[i].Quantity}</td>
+            <td>${data[i].Unit}</td>
+            <td>${data[i].Department}</td>
+            <td>${data[i].Notes}</td>
+        </tr>`;
+                            console.log(data[i].SerialNumber);
+                            console.log(tbodyHtml);
+                        }
+                        tbodyHtml = tbodyHtml + `</tbody>
+                        </table>`
+                        document.getElementById("demo").innerHTML = tbodyHtml;
+
+                    }
+                }
+
+
+                xhttp.open("GET", "grocery.json", true);
+                xhttp.send();
+            }
+        </script>
+
+</body>
+
+</html>

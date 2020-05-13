@@ -1,0 +1,90 @@
+{
+    "items": [{
+
+            "serial no": "1",
+            "name": "sugar",
+            "quantity": "1kg",
+            "unit": "1",
+            "department": "food",
+            "note": ""
+
+
+        },
+        {
+            "serial no": "2",
+            "name": "tea",
+            "quantity": "1kg",
+            "unit": "1",
+            "department": "food",
+            "note": ""
+
+        },
+        {
+            "serial no": "3",
+            "name": "mask",
+            "quantity": "number",
+            "unit": "6",
+            "department": "",
+            "note": "buy cotton"
+        },
+
+        {
+            "serial no": "4",
+            "name": "rice",
+            "quantity": "10kg",
+            "unit": "10",
+            "department": "food",
+            "note": "brand nirapara"
+        },
+        {
+            "serial no": "5",
+            "name": "soap",
+            "quantity": "number",
+            "unit": "4",
+            "department": "cosmetics",
+            "note": "brand chandrika"
+        },
+        {
+            "serial no": "6",
+            "name": "turmeric powder",
+            "quantity": "2kg",
+            "unit": "2",
+            "department": "food",
+            "note": ""
+        },
+        {
+            "serial no": "7",
+            "name": "chille powder",
+            "quantity": "2kg",
+            "unit": "2",
+            "department": "food",
+            "note": "brand eastern"
+        },
+        {
+
+            "serial no": "8",
+            "name": "sanitizer",
+            "quantity": "number",
+            "unit": "1",
+            "department": "health product",
+            "note": ""
+
+        },
+        {
+            "serial no": "9",
+            "name": "carrot",
+            "quantity": "1kg",
+            "unit": "1",
+            "department": "vegetable",
+            "note": "buy fresh one"
+        },
+        {
+            "serial no": "10",
+            "name": "book",
+            "quantity": "number",
+            "unit": "2",
+            "department": "statonery",
+            "note": "ruled"
+        }
+    ]
+}
